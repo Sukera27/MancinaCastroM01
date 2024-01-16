@@ -86,7 +86,7 @@ Si deseas personalizar la aplicación, puedes hacer lo siguiente:
   
 - **Modificar Tipografía**: Reemplaza las fuentes en el directorio `res/font/` con tus propias fuentes personalizadas. 
 ## Salir
-- Sale de la aplicación.
+- Sale a la pantalla de login.
 ## Autor
 
 - **Rafael Mancina**: Desarrollador de la aplicación.
