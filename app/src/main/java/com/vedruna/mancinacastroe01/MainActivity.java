@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
         String username = getIntent().getStringExtra("usuario");
 
-        
+
         TextView tvUsername = findViewById(R.id.textView3);
         tvUsername.setText("by " + username);
     }

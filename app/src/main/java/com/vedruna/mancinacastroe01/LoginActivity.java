@@ -31,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
         if(user.equals("admin") && password.equals("admin")){
 
          respuesta.setText("Usuario y contraseña correcta");
-            Intent intent=new Intent(this,MainActivity.class);
+            Intent intent=new Intent(this,NavigationMenu.class);
             intent.putExtra("usuario",user);
             startActivity(intent);
         }else {

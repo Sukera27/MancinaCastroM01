@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CountFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2F2F2F">
+
+        <!-- Texto del contador -->
+
+        <!-- Número del contador -->
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="CONTADOR"
+            android:textColor="#FFFFFF"
+            android:textSize="64sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="118dp"
+            android:layout_height="300dp"
+            android:fontFamily="@font/poppins_thin"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="200sp"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Linear Layout para los botones -->
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/textView3">
+
+            <!-- Botones -->
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#1B1B1B"
+                android:fontFamily="@font/poppins"
+                android:text="+"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                app:cornerRadius="35px" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#1B1B1B"
+                android:fontFamily="@font/poppins_medium"
+                android:text="RESET"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                app:cornerRadius="35px" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#1B1B1B"
+                android:fontFamily="@font/poppins"
+                android:text="-"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                app:cornerRadius="35px" />
+        </LinearLayout>
+
+        <!-- Texto de Rafael Mancina -->
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="By Rafael_Mancina"
+            android:textColor="#ACABAB"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.9" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Añadido espacio en blanco para el BottomNavigationView -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_gravity="bottom" />
+
+</FrameLayout>

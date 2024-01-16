@@ -21,6 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".NavigationMenu">
+            <!-- Otros atributos y configuraciones -->
+        </activity>
         <activity android:name=".MainActivity">
             <!-- otras configuraciones de actividad si las hay -->
         </activity>
