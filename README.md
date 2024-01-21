@@ -1,6 +1,6 @@
-# Ejercicio 03
+# EJERCICIO 04
 
-Cambia el proyecto para que el segundo activity en vez de ser el contador sea un activity con un `FrameLayout` en el que se verán los diferentes fragments (mínimo `home`, `contador`, `salir`) y por otra parte una barra de navegación con la que podamos viajar entre los diferentes fragments.
+Añade un Fragment mas que se llame API y sigue el tutorial (para la parte del consumo de la API) proporcionado para consumir un API con android(en esta entrega no tendrás que reflejar los resultado en la interfaz gráfica, solo en el log). Por otro lado crea un microservicio con una sola entidad.
 
 # Login 
 
@@ -39,7 +39,7 @@ Este activity implementa un menú de navegación (`BottomNavigationView`) con tr
 
 ## Home
 
-![Home](https://github.com/Sukera27/MancinaCastroM01/assets/122563964/efc55325-2dbc-47c8-9bf0-84b5b17269b7)
+![Home](https://github.com/Sukera27/MancinaCastroM01/assets/122563964/74842217-c241-4153-8486-4a4e90cf6c7c)
 
 
 - Pantalla de inicio de la aplicacion tras hacer el login correctamente.
@@ -47,7 +47,7 @@ Este activity implementa un menú de navegación (`BottomNavigationView`) con tr
 
 ## Contador
 
-![Contador](https://github.com/Sukera27/MancinaCastroM01/assets/122563964/52ca3880-5d98-47c7-920b-669c07e3884b)
+![counter](https://github.com/Sukera27/MancinaCastroM01/assets/122563964/e6558007-f48d-4cfd-b586-280ff9c411c9)
 
 
 
@@ -84,7 +84,17 @@ Si deseas personalizar la aplicación, puedes hacer lo siguiente:
 
 - **Cambiar Colores**: Modifica los valores de `android:background` y `android:textColor` en los elementos XML para ajustar los colores de fondo y texto.
   
-- **Modificar Tipografía**: Reemplaza las fuentes en el directorio `res/font/` con tus propias fuentes personalizadas. 
+- **Modificar Tipografía**: Reemplaza las fuentes en el directorio `res/font/` con tus propias fuentes personalizadas.
+
+## API
+
+![LogAPI](https://github.com/Sukera27/MancinaCastroM01/assets/122563964/3ea7e7b4-c1e6-44cd-9ba6-49e2f6b3f53d)
+
+- Ahora simplemente demostrar que cuando pulso en el `BottomNavigationView` del fragment correspondiente a la `API` aparezca los insert de los productos en el Log.
+
+![API](https://github.com/Sukera27/MancinaCastroM01/assets/122563964/43a1e1dd-f810-4483-8df1-a56a462c5baf)
+
+
 ## Salir
 - Sale a la pantalla de login.
 ## Autor
