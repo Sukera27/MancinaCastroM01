@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_homeFragment_to_salirFragment"
             app:destination="@id/salirFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_APIFragment"
+            app:destination="@id/APIFragment" />
     </fragment>
     <fragment
         android:id="@+id/countFragment"
@@ -27,4 +30,9 @@
         android:name="com.vedruna.mancinacastroe01.SalirFragment"
         android:label="fragment_salir"
         tools:layout="@layout/fragment_salir" />
+    <fragment
+        android:id="@+id/APIFragment"
+        android:name="com.vedruna.mancinacastroe01.APIFragment"
+        android:label="fragment_api"
+        tools:layout="@layout/fragment_api" />
 </navigation>

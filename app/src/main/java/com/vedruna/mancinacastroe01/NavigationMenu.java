@@ -33,6 +33,8 @@ public class NavigationMenu extends AppCompatActivity {
                 navController.navigate(R.id.homeFragment);
             } else if (item.getItemId() == R.id.navigation_count) {
                 navController.navigate(R.id.countFragment);
+            } else if (item.getItemId() == R.id.navigation_API) {
+                navController.navigate(R.id.APIFragment);
             } else if (item.getItemId() == R.id.navigation_salir) {
                 navController.navigate(R.id.salirFragment);
                 finish();

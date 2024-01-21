@@ -39,7 +39,7 @@ public class CountFragment extends Fragment {
         // Establecer el texto en el TextView
         tvUsername.setText("By " + username);
 
-        // Resto del código de tu fragmento...
+
 
         return view;
     }
