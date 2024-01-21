@@ -1,6 +1,6 @@
-# Ejercicio 02
+# Ejercicio 03
 
-Crea la segunda pantalla en el mismo proyecto(investiga como). Deberás realizar un lógin tal y como se muestra en el figma, en el caso de que el usuario y contraseña sean `admin` en el `TextView` de abajo saldrá “Usuario y contraseña correcta” en caso contrario “Usuario o contraseña incorrecta”. Investigar por vuestra cuenta como iniciar la aplicación en la Activity login. Pista → se configura en el `AndroidManifest.xml.` Una vez que iniciemos el login deberá pasar a la pantalla del contador pasando el dato del nombre del usuario (aparecerá en la parte baja de la pantalla de contador donde ponía “by nombre_alumno”).
+Cambia el proyecto para que el segundo activity en vez de ser el contador sea un activity con un `FrameLayout` en el que se verán los diferentes fragments (mínimo `home`, `contador`, `salir`) y por otra parte una barra de navegación con la que podamos viajar entre los diferentes fragments.
 
 # Login 
 
@@ -22,10 +22,34 @@ La pantalla de inicio de sesión contiene un formulario simple con campos para e
 - Mensajes de resultado dinámicos.
 - Transición a la pantalla del contador al iniciar sesión.
 
+## NavigationMenu
 
-# Contador
+Este activity implementa un menú de navegación (`BottomNavigationView`) con tres fragments: **Home**, **Counter**, y **Salir**.
 
-![Contador](https://github.com/Sukera27/MancinaCastroM02/assets/122563964/bae5a83e-74c4-4da3-9db2-207e88af39af)
+### Componentes Destacados:
+
+- `BottomNavigationView` para la barra de navegación.
+- `FrameLayout` espacio donde aparecen los distintos fragments.
+
+### Funcionalidad:
+
+- Navegación fluida entre los fragments mediante el menú de navegación.
+
+# Fragments
+
+## Home
+
+![Home](https://github.com/Sukera27/MancinaCastroM01/assets/122563964/efc55325-2dbc-47c8-9bf0-84b5b17269b7)
+
+
+- Pantalla de inicio de la aplicacion tras hacer el login correctamente.
+
+
+## Contador
+
+![Contador](https://github.com/Sukera27/MancinaCastroM01/assets/122563964/52ca3880-5d98-47c7-920b-669c07e3884b)
+
+
 
 Este es un simple proyecto de aplicación Android que implementa un contador. La aplicación utiliza `ConstraintLayout` para organizar los elementos de la interfaz de usuario y presenta botones para incrementar, decrementar y reiniciar el contador.
 
@@ -40,7 +64,7 @@ Este es un simple proyecto de aplicación Android que implementa un contador. La
 
 ## Uso
 
-1. Al introdcuir el login correctamente, verás el contador inicializado a cero.
+1. Verás el contador inicializado a cero.
 2. Utiliza los botones "+" y "-" para aumentar y disminuir el contador, respectivamente.
 3. El botón "RESET" restablecerá el contador a cero.
 
@@ -61,7 +85,8 @@ Si deseas personalizar la aplicación, puedes hacer lo siguiente:
 - **Cambiar Colores**: Modifica los valores de `android:background` y `android:textColor` en los elementos XML para ajustar los colores de fondo y texto.
   
 - **Modificar Tipografía**: Reemplaza las fuentes en el directorio `res/font/` con tus propias fuentes personalizadas. 
-
+## Salir
+- Sale a la pantalla de login.
 ## Autor
 
 - **Rafael Mancina**: Desarrollador de la aplicación.
